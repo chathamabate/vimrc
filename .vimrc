@@ -14,7 +14,7 @@ inoremap (<CR> (<CR>)<Esc>ko filetype plugin indent on
 call plug#begin()
 Plug 'vim-jp/vim-cpp'
 Plug 'morhetz/gruvbox'
-Plug 'ervandew/supertab'
+Plug 'ycm-core/YouCompleteMe'
 call plug#end()
 
 set background=dark
