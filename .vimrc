@@ -8,6 +8,9 @@ set expandtab
 set splitbelow
 set splitright
 
+set nowrap
+set termguicolors
+
 "   Bracket completion.
 inoremap {<CR> {<CR>}<Esc>ko
 inoremap [<CR> [<CR>]<Esc>ko
@@ -28,6 +31,9 @@ Plug 'flazz/vim-colorschemes'
 "   Status bar.
 Plug 'bling/vim-airline'
 
+"   Git Gutter.
+Plug 'airblade/vim-gitgutter'
+
 "   Language Server Protocol.
 Plug 'prabirshrestha/vim-lsp'
 Plug 'mattn/vim-lsp-settings'
@@ -46,6 +52,10 @@ call plug#end()
 "   C Syntax Highlighting Settings.
 let g:cpp_member_highlight = 1
 
+"   Unsuccessful attempt for custom headers.
+" set path+=/Users/chathamabate/CEdev/include
+" set path+=/Users/chathamabate/CEdev/ti-code
+
 "   LSP settings.
 let g:lsp_diagnostics_echo_cursor = 1
 
@@ -58,7 +68,7 @@ nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-p> :NERDTreeFind<CR>
 
 set background=dark
-colorscheme gruvbox
+colorscheme srcery
 
 set backspace=indent,eol,start
 
